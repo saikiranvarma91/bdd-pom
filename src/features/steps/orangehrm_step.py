@@ -33,4 +33,4 @@ def step_impl(context):
 	
 @then('I closed the browser')
 def step_impl(context):
-    assert context.obj.unload_browser(context) is True
+    context.obj.unload_browser(context)
